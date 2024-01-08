@@ -28,6 +28,10 @@ function likeCallback(e) {
       // alert(serverMessage);
       // heart.innerText = glyphStates[heart.innerText];
       // heart.style.color = colorStates[heart.style.color];
+      alert(serverMessage);
+      heart.innerText = glyphStates[heart.innerText];
+      heart.style.color = colorStates[heart.style.color];
+    
     })
     .catch(function(error) {
       alert("Something went wrong!");
@@ -41,7 +45,9 @@ function likeCallback(e) {
 // for (const glyph of articleHearts) {
 //   glyph.addEventListener("click", likeCallback);
 // }
-
+for (const glyph of articleHearts) {
+  glyph.addEventListener("click", likeCallback);
+}
 // STEP 4: 
 
 // When all the STEPs' code changes have been complete, you'll be able to see a
